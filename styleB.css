@@ -1,0 +1,39 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: flex; /* to allow  section element to be laid out in a flexible manner*/
+    flex-wrap: nowrap;  /* to prevent the flex items within the section element from wrapping to the next line if they exceed the available space horizontally*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.box {
+    width: 100px;  /* sets width of the "box" to 100pixels */
+    height: 150px; /* sets height of the "box" to 150pixels */
+    border-left: 10px dotted #D0D0FF; /* creats left border to the "box" element which is 10pixels wide , dotted and colored"*/
+    background-color: #eeeff2;
+    margin-right: 10px;
+    text-align:left; /*  to Align text to the left */
+    padding: 10px; /* to add 10pixels of padding inside the "box" element and creats space between the content and the border.*/ 
+    line-height: normal; /* resets the line height to its default value */
+    cursor: pointer; /* changes cursor to pointer, indicating its clickable*/
+    transition: background-color 0.3s, color 0.3s; /* changes in background-color and text color over a duration of 0.3 seconds*/
+}
+
+
+.box:last-child {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#boxA:hover, #boxB:hover, #boxC:hover, #boxD:hover, #boxE:hover, #boxF:hover {
+    background-color: yellow;
+    color: goldenrod;
+}
