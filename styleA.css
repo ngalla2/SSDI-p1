@@ -11,7 +11,7 @@ body {
 }
 
 .box {
-    width: 85px; /* to set width of each box to 85px*/
+    width: 100px; /* to set width of each box to 85px*/
     height: 100px;/* to set height of each box to 100px*/
     /*border: 1px solid #687291;*/
     border-top: 1px solid black;/* to add thick solid black border to the top of each box*/
@@ -19,7 +19,7 @@ body {
     align-items: top;/* to align each element in the box at the top*/
     justify-content: center; /* to Center the items horizontally inside each flex container*/
     font-size: 40px; /* Each letter inside the box is 40 pixels */
-    margin: 5px 0; /* to add margin of 5 pixels above and below each box */
+    margin: 5px auto; /* to add margin of 5 pixels above and below each box */
 }
 
 .box:nth-child(odd) { /* to select odd-indexed  "boxes" elements*/
