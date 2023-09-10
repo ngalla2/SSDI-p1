@@ -5,42 +5,56 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;/*body height*/
-    background: radial-gradient(ellipse at center, #ff6b6b, #ff1493, #ff69b4); /* Back ground colors */
+    height: 100vh; /* body height */
+    background: radial-gradient(ellipse at center, #C0E0C0, #80C080, #409040); /* Back ground colors */
 }
-/* creating container for the circles*/
-  .container {
+
+/* creating container for the circles */
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-/*styling each circle*/
+
+/* styling each circle */
 .box {
     width: 150px;
     height: 150px;
-    border: 2px solid #3498db;/*border colour for circles*/
+    border: 2px solid #3498db; /* Border color for circles */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;/*font size inside the circle*/
-    margin: 5px;/*margin around the circle*/
-    border-radius: 50%;/*to make circles round*/
-    background-color: #3498db; /* blue background */
-
+    font-size: 40px; /* Font size inside the circle */
+    margin: 5px; /* Margin around the circle */
+    border-radius: 50%; /* To make circles round */
 }
 
-.box:nth-child(odd) {
-    background-color: #e74c3c; /*red background */
-
+/* Circle A - Orange */
+.box:nth-child(1) {
+    background-color: #FFA500; /* Orange for the first circle */
 }
 
-.box:nth-child(even) {
-    background-color: #27ae60; /* green background */
-
+/* Circle B - Very Light Green */
+.box:nth-child(2) {
+    background-color: #B2FF66; /* Very light green for the second circle */
 }
 
-.box:last-child {
-    background-color: #9b59b6; /* purple background */
-    border: 4px solid #8e44ad;
-    align-items:center;
+/* Circle C - Very Light Orange */
+.box:nth-child(3) {
+    background-color: #FFE4B2; /* Very light orange for the third circle */
+}
+
+/* Circle D - Moderate Blue */
+.box:nth-child(4) {
+    background-color: #6495ED; /* Moderate blue for circle D */
+}
+
+/* Circle E - Moderate Pink */
+.box:nth-child(5) {
+    background-color: #FF69B4; /* Moderate pink for circle E */
+}
+
+/* Circle F - Moderate Red */
+.box:nth-child(6) {
+    background-color: #FF6B6B; /* Moderate red for circle F */
 }
