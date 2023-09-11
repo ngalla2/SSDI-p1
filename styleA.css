@@ -1,40 +1,45 @@
-
 body {
-    font-family: Tahoma, sans-serif; /* to set font for the text inside "body" element*/
-    margin: 0; /* to remove default spacing that browser provides for the body elements*/
-    padding: 0;  /* to remove default spacing that browser provides for the body elements*/
-    display: flex; /* "body" element uses flexbox layout*/
-    flex-direction: column; /* to set the boxes vertically*/
-    align-items: center; /* all the elements set to center*/
-    justify-content: space-between; /* to have space between each box*/
-    height: 100vh;/* to occupy entire vertical space*/
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .box {
-    width: 100px; /* to set width of each box to 85px*/
-    height: 100px;/* to set height of each box to 100px*/
-    /*border: 1px solid #687291;*/
-    border-top: 1px solid black;/* to add thick solid black border to the top of each box*/
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid #687291;
+    text-align: center;
     display: flex;
-    align-items: top;/* to align each element in the box at the top*/
-    justify-content: center; /* to Center the items horizontally inside each flex container*/
-    font-size: 40px; /* Each letter inside the box is 40 pixels */
-    margin: 5px auto; /* to add margin of 5 pixels above and below each box */
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 5px 0; /* Adjusted margin to 5px vertically and no auto for horizontal margin */
+    flex-grow: 1; /* This property allows boxes to grow vertically equally */
 }
 
-.box:nth-child(odd) { /* to select odd-indexed  "boxes" elements*/
-    background-color: #dfe1e7; /* to get background color for 1st , 3rd, 5th elements*/
+.box:nth-child(odd) {
+    background-color: #dfe1e7;
 }
 
 .box:nth-child(even) {
     background-color: #eeeff2;
 }
 
-.box:last-child { /* to select last indexed element*/
-    border: 4px solid #000;/* to get solid black border of 4 pixels*/
-    background-color: #687291; /* to get background color*/
-    color: black; /* color for the element in the box*/
-    align-items:center;
-    
-   
+.box:last-child {
+    border: 4px solid #000;
+    background-color: #687291;
+    color: black;
+    align-items: center;
 }
